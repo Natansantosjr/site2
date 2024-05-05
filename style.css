@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+body{
+    background-color: rgb(34, 34, 34);
+    height: 100px;
+}
+.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+div{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div#logo{
+    color: rgba(39, 4, 167, 0.815);
+    text-shadow: 2px 2px 3px rgb(59, 54, 54);
+}
+
+header {
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+ 
+}
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header a{
+    color: rgb(90, 88, 88);
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header a:hover{
+    color: white;
+    transform: scale(1.05);
+    transition: .3s;
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0  40px;
+}
+.btn-contato button{
+    position: 10px 40px;
+    padding: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: rgba(39, 4, 167, 0.815);
+    border-radius: 30px;
+    border: none;
+
+}
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px rgba(39, 4, 167, 0.815);
+    transition: .2s;
+    transform: scale(1.04);
+
+}
+section{
+    padding: 20px 6%;
+   
+}
+section .topo-do-site.flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.topo-do-site h1{
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 40px 0;
+}
+.topo-do-site p{
+    margin: 30px 0;
+}
+
+@keyframes flutuar{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 30px;
+    }
+}
+.img-topo-site img{
+    position: relative;
+    animation: flutuar 5s ease-in-out infinite alternate;
+
+}
+
+
+
+   
+    
